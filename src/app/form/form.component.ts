@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { User } from 'src/model/user';
 
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
-export class FormComponent {
-
+export class FormComponent implements OnInit {
+  user!:User;
+ngOnInit(): void {
+  this.user=new User();
+}
 }
