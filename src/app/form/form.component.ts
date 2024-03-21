@@ -15,4 +15,10 @@ ngOnInit(): void {
 save(f: NgForm){
   console.log(f.value['password'])
 }
+submit(form: NgForm){
+  if(form.valid){
+    this.user =form.value
+    console.log(this.user);
+  }
+}
 }

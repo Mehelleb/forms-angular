@@ -1,6 +1,6 @@
 <div class="container">
     <h2>Driven  Forms</h2>
-    <form #f="ngForm" (submit)="save(f)">
+    <form #f="ngForm" (ngSubmit)="submit(f)">
         <div class="form-group">
             <label>Login</label>
             <input name="login" type="text" class="form-control" required ngModel #l="ngModel">
