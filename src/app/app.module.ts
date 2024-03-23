@@ -12,7 +12,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const ROUTES: Routes=[
   {path:'products', component: ProductsComponent},
-  {path:'form', component: AddProductComponent},
+  {path:'form', component: FormComponent},
   {path:'**', component: NotFoundComponent},
 ];
 
