@@ -1,0 +1,15 @@
+<div class="container">
+<h3>Products:</h3>
+<div class="row">
+    <div class="col-md-3">
+    <ul *ngFor="let p of product" class="list-group mt-3" >
+        <li class="list-group-item list-group-item-primary">ID: {{p.id}}</li>
+        <li class="list-group-item list-group-item-secondary">TITLE: {{p.title}}</li>
+        <li class="list-group-item list-group-item-success">QUANTITY: {{p.quantity}}</li>
+        <li class="list-group-item list-group-item-warning">LIKE: {{p.like}}</li>
+        <a routerLink="{{p.id}}">Détail ?</a>
+    </ul>
+    </div>
+</div>
+</div>
+

@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div *ngFor="let p of product">
+                <div *ngIf="p.id == id" class="list-group mt-3" >
+                    <h3>Product: {{p.id}}</h3>
+                    <ul>
+                        <li class="list-group-item list-group-item-primary">ID: {{p.id}}</li>
+                        <li class="list-group-item list-group-item-secondary">TITLE: {{p.title}}</li>
+                        <li class="list-group-item list-group-item-success">QUANTITY: {{p.quantity}}</li>
+                        <li class="list-group-item list-group-item-warning">LIKE: {{p.like}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
