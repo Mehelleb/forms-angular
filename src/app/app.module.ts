@@ -8,6 +8,7 @@ import { FormComponent } from './form/form.component';
 import { FormProductComponent } from './form-product/form-product.component';
 import { ProductsComponent } from './products/products.component';
 import { HomeComponent } from './home/home.component';
+import { DetailComponent } from './detail/detail.component';
 
 
 
@@ -17,7 +18,8 @@ import { HomeComponent } from './home/home.component';
     FormComponent,
     FormProductComponent,
     ProductsComponent,
-    HomeComponent
+    HomeComponent,
+    DetailComponent
 
   ],
   imports: [

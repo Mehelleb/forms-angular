@@ -6,6 +6,7 @@ import { FormComponent } from './form/form.component';
 import { FormProductComponent } from './form-product/form-product.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { DetailComponent } from './detail/detail.component';
 
 const ROUTES: Routes=[
   {path:"", component: HomeComponent},
@@ -13,6 +14,7 @@ const ROUTES: Routes=[
 {path:"add", component: FormProductComponent},
 {path:"log", component: FormComponent},
 {path:"not", component: NotFoundComponent},
+{path:"home/:id", component: DetailComponent},
 ];
 
 @NgModule({
